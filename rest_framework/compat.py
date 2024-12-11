@@ -59,6 +59,8 @@ try:
     import requests
 except ImportError:
     requests = None
+except AttributeError:
+    import http_requests as requests
 
 
 # PATCH method is not implemented by Django
